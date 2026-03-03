@@ -4,7 +4,8 @@
 The Stock Return Prediction Pipeline is an end-to-end quantitative machine learning system designed to forecast short-horizon equity returns using historical market data. The system models next-period return direction using engineered technical and statistical signals derived from adjusted close prices. It incorporates strict time-series validation, hyperparameter tuning, and leakage prevention to ensure realistic out-of-sample performance estimates. The pipeline mirrors a professional quantitative research workflow, emphasizing reproducibility, modularity, and financial domain rigor.
 
 ## Architecture
-### Data Acquisition Layer: Historical OHLCV data is programmatically downloaded via financial APIs and structured into chronologically ordered, time-indexed datasets. All features are derived from adjusted close prices to account for dividends and stock splits.
+### Data Acquisition Layer: 
+Historical OHLCV data is programmatically downloaded via financial APIs and structured into chronologically ordered, time-indexed datasets. All features are derived from adjusted close prices to account for dividends and stock splits.
 
 ### Target Construction Layer: 
 Forward returns are computed as percentage changes in adjusted close, including 1-day, 5-day, and 20-day forward returns. For classification tasks, next-day return direction is binarized (positive vs non-positive).
