@@ -37,18 +37,23 @@ scikit-learn:
 Matplotlib: Visualization of performance metrics and model diagnostics.
 
 ## Features
-### Time-Series-Cross Validation: Implements expanding-window cross-validation using TimeSeriesSplit to prevent data leakage and maintain temporal ordering.
+### Time-Series-Cross Validation: 
+Implements expanding-window cross-validation using TimeSeriesSplit to prevent data leakage and maintain temporal ordering.
 
-### Hyperparameter Tuning: Uses structured search procedures (GridSearchCV or RandomizedSearchCV) to optimize model parameters such as:
+### Hyperparameter Tuning:
+Uses structured search procedures (GridSearchCV or RandomizedSearchCV) to optimize model parameters such as:
 • Regularization strength (C) for Logistic Regression
 • Number of estimators, max depth, and minimum samples split for Random Forest
 • Kernel parameters for SVM
 
-### Multi-Horizon Return Engineering: Explicit modeling of 1-day, 5-day, and 20-day return structures to capture short-term momentum and medium-term trends.
+### Multi-Horizon Return Engineering: 
+Explicit modeling of 1-day, 5-day, and 20-day return structures to capture short-term momentum and medium-term trends.
 
-### Volatility Modeling: Rolling standard deviation of adjusted close returns captures local market uncertainty regimes.
+### Volatility Modeling:
+Rolling standard deviation of adjusted close returns captures local market uncertainty regimes.
 
-### Trend Signals: Moving averages and relative price deviations provide interpretable momentum-based predictors.
+### Trend Signals: 
+Moving averages and relative price deviations provide interpretable momentum-based predictors.
 
 ### Performance Metrics:
 Models are evaluated using:
